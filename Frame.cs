@@ -40,7 +40,7 @@ public class Frame : Element
         return eventConsumed;
     }
 
-    public virtual bool OnMouseReleased(MouseButtonEventArgs e)
+    public override bool OnMouseReleased(MouseButtonEventArgs e)
     {
         if (!base.OnMouseReleased(e)) return false;
 
@@ -55,7 +55,7 @@ public class Frame : Element
         return eventConsumed;
     }
 
-    public virtual bool OnKeyPressed(KeyEventArgs e)
+    public override bool OnKeyPressed(KeyEventArgs e)
     {
         if (!InFocus) return false;
 
@@ -70,7 +70,7 @@ public class Frame : Element
         return eventConsumed;
     }
 
-    public virtual bool OnKeyReleased(KeyEventArgs e)
+    public override bool OnKeyReleased(KeyEventArgs e)
     {
         if (!InFocus) return false;
 
@@ -85,7 +85,7 @@ public class Frame : Element
         return eventConsumed;
     }
 
-    public virtual bool OnMouseMoved(MouseMoveEventArgs e)
+    public override bool OnMouseMoved(MouseMoveEventArgs e)
     {
         if (!base.OnMouseMoved(e)) return false;
 
@@ -100,7 +100,7 @@ public class Frame : Element
         return eventConsumed;
     }
 
-    public virtual bool OnMouseScroll(MouseWheelEventArgs e)
+    public override bool OnMouseScroll(MouseWheelEventArgs e)
     {
         if (!InFocus) return false;
 
